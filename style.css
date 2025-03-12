@@ -124,6 +124,37 @@ nav .fa{
     display: none;
 }
 
+@media(max-width:700px) /*makes the website be responsive in mobile phones*/
+{
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: fixed; /* prevents mobile menu from showing up*/
+        background:  #3486f1;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;  /*makes the menu not appear*/
+        text-align: left;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+    nav .fa{
+        display: block;
+        font-size: 22px;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
 .destination {
     width: 80%;
     margin: auto;
@@ -143,6 +174,7 @@ nav .fa{
 }  
 
 .dest-links li {  
+    list-style-type:none;
     background: lightblue;  
     margin: 5px 0;  
     padding: 10px;  
@@ -152,3 +184,52 @@ nav .fa{
 .dest-links li:hover {  
     transform: translateY(-10px); /* Moves the item up on hover */  
 }  
+
+.tips{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.tips h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.tips ul {
+    flex-basis: 31%;
+    background:lightblue;
+    border-radius: 6px;
+    margin-bottom: 5%;
+    padding: 20px 8px;
+    box-sizing: border-box;
+    transition:  0.3s;
+}
+
+.places{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.row /*aligns content in a row format*/
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.places-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.places-col img{
+    width: 100%;
+    display: block;
+}
