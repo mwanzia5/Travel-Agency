@@ -271,3 +271,44 @@ nav .fa{
     bottom: 49%;
     opacity: 1;
 }
+
+@media(max-width:700px) /*editing the column section to fit in small devices*/
+{
+.row{
+    flex-direction: column;
+}
+.destination h1{
+    font-size: 20px;
+}
+.tips h1{
+    font-size: 20px;
+}
+.places h1{
+    font-size: 20px;
+}
+}
+
+
+
+
+table {  
+    width: 50%;             /* Table width */  
+    border-collapse: collapse; /* Merge table borders */  
+    margin: 20px auto;      /* Center the table on the page */  
+}  
+th, td {  
+    border: 1px solid #333; /* Border style for cells */  
+    padding: 20px;          /* Padding inside cells */  
+    text-align: center;      /* Center text */  
+}  
+th {  
+    background-color: #f2f2f2; /* Header background color */  
+}  
+
+
+.packages{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
